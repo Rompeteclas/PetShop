@@ -1,45 +1,424 @@
-.slide {
-      background-image: url("../img/bowl.png");
-      width: auto;
-      height: 440px;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-    }
-  
-    .slide .texto {
-      padding: 0;
-      margin-right: 12px;
-      font-size: 16px;
-      text-align: center;
-    }
-    .slide .texto button {     
-      margin-right: 0px;
-    }
-    .cards {
-      display: flex;
-      flex-direction: row;  
-      align-items: center;
-      text-align: center;
-    }  
-    .suscribcion{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 0 47px 0 23px;
-    }
-    .sustitulo{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      justify-content:center;
-      align-items: center;
-      margin-top: 14px;
+header {
+  background-color:#F0A83E;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  color:#3C2313;
+  flex-direction: column; 
+  width: auto;
+}
+button{
+  border-radius: 5px;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center;    
+  height: 54px;
+  margin: 0 40px 0 40px;
+}  
 
-    }
-    .sustitulo > div:first-child {
-      margin-right: 10px;
-    }
-    .susformulario button{
-      margin-right: 0px;
-    }
+.idioma{
+  display: none;  
+}
+.selectoption{
+  display:flex;    
+  flex-direction: row;  
+}
+.selectoption select{
+  border: none;
+  color: #FFFFFF;
+  background-color: #222222;
+}
+.idioma li{
+  margin: 0 10px 0 10px;
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  }
+.logo img{
+  padding: 0 2px 0 2px;
+  height: 12px;
+  width: 12px;
+}
+.logo span{
+  color:#F3F3F3;
+}
+.menu-horizontal {
+  display: flex;
+  list-style-type: none; 
+  color: #FFFFFF;
+  padding: 0;
+}
+
+.menu-horizontal li {
+      list-style-type: none;
+      padding-left: 20px;
+      background-image: url(../img/R3w.png);
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 16px; /* Ajusta el tamaño de la imagen */
+      line-height: 1.5;
+      margin: 0 0 0 20px;
+}
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.slide {
+background-image: url("../img/Full.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+width: 414px;
+height: 440px;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+
+.slide .texto {
+padding: 20px;
+font-size: 16px;
+text-align: right;
+}
+
+.slide .texto h3 {
+background-color: white;
+font-size: 25px;
+width: 365px;
+height: 54px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.slide p {
+margin: 12px 0;
+}
+
+.slide .texto button {
+background-color: orange;
+color: white;
+padding: 10px 20px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+width: 141px;
+height: 49px;
+margin-right: 44px;  
+}
+
+.productos_destacados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.productos_destacados img{
+  margin-top: 28.25px;   
+}
+.productos_destacados h2{
+  width: 212.89px;
+  height: 93.95px;
+  color: #3C2313;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;    
+}
+
+.productos_destacados p{
+  font-size: 13px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #666666;
+}
+.productos_destacados span{
+  margin: 0 21px 0 21px;;
+}
+.cards div{
+      background-color: #FBFAF6;
+      margin: 25px 11px 0 22.78px;
+}
+
+.cards > div img {
+  position: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cards > div p {
+  position: sticky;
+  align-items: center;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.cards > div p span {
+  font-weight: bold;
+  color:#F0A83E;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 34px;
+}
+
+.formulario h2{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #3C2313;
+}
+.formulario form{
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.formulario input{
+  font-size: 9px;
+  width: 298px;
+  height: 40px;
+  background: #3C2313;
+  border-radius: 15px;
+  margin: 5px 0 0 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+.formulario button{
+  margin:48px 0 45px 0;
+  width: 199px;
+  height: 45px;
+  left: calc(50% - 199px/2 - 102.5px);
+  bottom: 480px;
+  background: #8A8787;
+  border-radius: 25px;
+  border: none;
+  color: #FFFFFF;;
+  margin: 48px 5px 45px 5px;
+ }
+.formulario .enviar{
+  background: #F0A83E;
+}
+.formulario .formbuton{
+  display: flex;  
+  flex-direction: row;
+}
+.suscribcion{
+  display: flex;
+  background-color: #F0A83E;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  flex-direction: column;
+}
+.sustitulo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*margin-top: 14px;*/
+  align-items: center;
+}
+
+.sustitulo > div:first-child {
+  margin-right: -40px;
+}
+
+.sustitulo > div:last-child {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.susformulario{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+  margin:0%;
+  padding: 0%;
+}
+
+.susformulario input{
+  width: 261px;
+  height: 40px;
+  bottom: 344px;
+  background: #FFFFFF;
+  border-radius: 15px;    
+  margin: 8px 9px 10px 15px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #A0A0A0;
+  border:none
+}
+.susformulario input[type="text"] {
+  padding: 5px; 
+}
+.susformulario button{
+  width: 100px;
+  height: 35px;
+  bottom: 346px;
+  background: #3C2313;
+  margin-right: 29px  ;
+  border-radius: 15px;
+  font-size: 15px;
+  border: none;
+  color:#FFFFFF;
+}
+.logo2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  padding-top: 11px;
+  }
+.logo2 img{
+  padding: 0 2px 0 2px;
+  height: 12px;
+  width: 12px;
+}
+.logo2 span{
+  color:#F0A83E;
+}
+.menufooter{
+  background-color: #3C2313;  
+}
+.mensajefooter{
+  background-color: #222222;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;    
+  color: #FFFFFF;
+  text-align: center;
+}
+.contacto{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 14px;
+  align-items: left;
+  margin-left: 87px;
+}
+.contacto .datos{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-top: 14px;
+  align-items: center;
+  color: #FFFFFF;
+}
+.contacto .datos img{
+  width: 68px;
+  height: 68px;
+}
+.contacto .datos .texto{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 15px;
+}
+.contacto .datos .texto h4{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;  
+}
+.contacto .datos .texto p{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  color: #8A8787;
+}
+@media only screen and (min-width:415px)   {
+  .idioma{
+    display: block;
+    padding: 0 40px 0 40px;
+    background-color:#222222;
+    color:#F3F3F3;
+    display:flex;    
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .slide {
+    background-image: url("../img/bowl.png");
+    width: auto;
+    height: 440px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .slide .texto {
+    padding: 0;
+    margin-right: 12px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .slide .texto button {     
+    margin-right: 0px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    text-align: center;
+  }  
+  .suscribcion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 47px 0 23px;
+  }
+  .sustitulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content:center;
+    align-items: center;
+    margin-top: 14px;
+
+  }
+  .sustitulo > div:first-child {
+    margin-right: 10px;
+  }
+  .susformulario button{
+    margin-right: 0px;
+  }
+  .menufooter{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 70px 0 70px;
+  }
+  .menufooter .logo2{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+  }
+
+}
